@@ -3,8 +3,8 @@ package solutions;
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
-//없는 숫자 더하긴
-class Solution4 {
+//없는 숫자 더하기
+public class Solution4 {
 	public int solution(int[] numbers) {
         int answer = 0;
         for(int i=0; i<=9; i++) {
