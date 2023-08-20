@@ -43,7 +43,7 @@ public class Solution1 {
 
 	        
 
-	        //String answer = a+b;
+	        //String answer = a+b
 
 	        //answer = answer.replace(" ", "");
 
@@ -70,7 +70,5 @@ public class Solution1 {
 	        //System.out.print(a + b);
 
 }
-
-
 
 }
