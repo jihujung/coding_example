@@ -3,15 +3,30 @@ package solutions;
 public class Solution11 {
 
 	public static void main(String[] args) {
+		//기본 구구단 세로배열
+//		for(int i=2; i<=9; i++) { //단수
+//			System.out.printf("[%d단]\n", i);
+//			for(int j=1; j<=9; j++) { //곱하기
+//					System.out.println(i + " x " +  j + " = " +  ( i * j) + "\t");
+//			}
+//			System.out.println();
+//		}
+		
+		
 		//세로배열
-		for(int i=1; i<=9; i++) { //단수
-			for(int j=2; j<=9; j++) { //곱하기
-				if(i %2 == 0) { //짝수일때
-					System.out.print(i + " x " +  j + " = " +  ( i * j) + "\t");
-					}
-			}
-			System.out.println();
-		}
+//		for(int i=2; i<=9; i++) { //단수
+//			for(int j=1; j<=9; j++) { //곱하기
+//				if(i %2 == 0 && j<=5) { //짝수일때
+//					System.out.println(i + " x " +  j + " = " +  ( i * j) + "\t");
+//					}else if(i %2 == 1 && j>=6){
+//						System.out.println(i + " x " +  j + " = " +  ( i * j) + "\t");
+//					}
+//			}
+//			System.out.println();
+//		}
+		
+		
+		
 		
 		//가로배열
 		//첫번째 시도
@@ -19,7 +34,7 @@ public class Solution11 {
 //			if(i %2 == 0) {
 //				for(int j=1; j<=5; j++) {
 //					System.out.print(i + " x " +  j + " = " +  String.format("%2d", i * j) + "\t");
-//					
+		                                                      //Integer Formatting
 //				}
 //				
 //			}else {
