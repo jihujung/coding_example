@@ -49,58 +49,53 @@ public class Solution11 {
 
 		//µÎ¹øÂ° ½Ãµµ
 //		for(int j=1; j<=9; j++) { //°öÇÏ±â
-//			for(int i=2; i<=9; i++) { //´Ü¼ö
-//				if(i%2 == 0 && j<=5) { //Â¦¼öÀÏ ¶§ 1,2,3,4,5 °ö¼À¸¸
-//					System.out.print(i + " x " +  j + " = " +  i * j + "\t");
-//				}else if(i%2 == 1) { //È¦¼öÀÏ ¶§ 6,7,8,9 °ö¼À¸¸
-//					for(int a=3; a<=9; a+=2) { //°öÇÏ±â
-//						if(a>=5) {
-//							System.out.print(i + " x " +  a + " = " +  i * a + "\t");
-//						    break;
-//						}else if(i==9) {
-//							System.out.println(i + " x " +  a + " = " +  i * a + "\t");
-//						}
+//				for(int i=2; i<=9; i++) {
+//					if(i%2 == 0 && j<=5) {
+//						System.out.print(i + " x " +  j + " = " +  String.format("%2d", i * j) + "\t");
+//					}else if(i%2 == 1 && j>=6) {
+//						System.out.print(i + " x " +  j + " = " +  String.format("%2d", i * j) + "\t");
 //					}
-//					
-//					
+//				
+//					}
+//				System.out.println();
 //				}
-//			
-//				}
-//			
-//			
-//			}
+			
+		
+	
 	
 		//¼¼¹øÂ° ½Ãµµ
-//		for(int j=1; j<=9; j++) { //°öÇÏ±â
-//			for(int i=2; i<=9; i++) { //´Ü¼ö
-//				switch(i) {
-//				case 2: case 4: case 6: case 8:
-//					if(j<=5) {
-//						System.out.print(i + " x " +  j + " = " +  i * j + "\t");
-//					}else if(j<=6) {
-//						
-//					}
-//					break;
-//				case 3: case 5: case 7:jj
-//					if(j<=5) {
-//						System.out.print(i + " x " +  (j+5) + " = " +  i * (j+5) + "\t");
-//					}else if(j>=6) {
-//						System.out.print(i + " x " +  j + " = " +  i * j + "\t");
-//					}
-//					break;	
-//				
-//				case 9:
-//					if(j<=5) {
-//						System.out.println(i + " x " +  (j+5) + " = " +  i * (j+5) + "\t");
-//					}else if(j>=6) {
-//						System.out.println(i + " x " +  j + " = " +  i * j + "\t");
-//					}
-//					break;	
-//				}
-//				
-//				}
-//			
-//				}
+		for(int j=1; j<=5; j++) { //°öÇÏ±â
+			for(int i=2; i<=9; i++) { //´Ü¼ö
+				switch(i) {
+				case 2: case 4: case 6: case 8:
+					if(j<=5) {
+						System.out.print(i + " x " +  j + " = " +  i * j + "\t");
+					}else if(j>=6) {
+						break;
+					}
+					break;
+				case 3: case 5: case 7:
+					if(j<=4) {
+						System.out.print(i + " x " +  (j+5) + " = " +  i * (j+5) + "\t");
+					}else if(j>6) {
+						System.out.print(i + " x " +  j + " = " +  i * j + "\t");
+					}else if(j==5) {
+						System.out.print("                ");
+					}
+					break;	
+				
+				case 9:
+					if(j<=4) {
+						System.out.println(i + " x " +  (j+5) + " = " +  i * (j+5) + "\t");
+					}else if(j>=6) {
+						System.out.println(i + " x " +  j + " = " +  i * j + "\t");
+					}
+					break;	
+				}
+				
+				}
+			
+				}
 		
 		
 		
