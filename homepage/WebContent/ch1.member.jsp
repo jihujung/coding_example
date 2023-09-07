@@ -8,6 +8,9 @@
 <script src ="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript">
 
+//내가 한 javaScript 버전
+//주민번호 유효성 검사만 못함!! 마스킹처리는 오케이!
+
 //중복체크 버튼을 눌렀는지
 var clickidChecked = false;
 
